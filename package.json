@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,9 @@
   "dependencies": {
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "install": "0.13.0",
+    "prettier": "2.1.1"
   }
 }
