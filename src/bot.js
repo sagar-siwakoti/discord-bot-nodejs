@@ -11,12 +11,13 @@ const webhookClient = new WebhookClient(
   process.env.WEBHOOK_TOKEN
 );
 
+//declaring prefix
 const PREFIX = "$";
 
 client.on("ready", () => {
   console.log(`${client.user.tag} has logged in.`);
 });
-
+//declaring message
 client.on("message", async (message) => {
   if (message.author.bot) return;
   if (message.content.startsWith(PREFIX)) {
