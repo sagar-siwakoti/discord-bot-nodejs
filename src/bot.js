@@ -83,7 +83,7 @@ client.on("messageReactionAdd", (reaction, user) => {
     }
   }
 });
-
+//checking the bot reply with message id
 client.on("messageReactionRemove", (reaction, user) => {
   const { name } = reaction.emoji;
   const member = reaction.message.guild.members.cache.get(user.id);
