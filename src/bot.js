@@ -62,6 +62,7 @@ client.on("message", async (message) => {
   }
 });
 
+//adding the bot message reaction using emoji
 client.on("messageReactionAdd", (reaction, user) => {
   const { name } = reaction.emoji;
   const member = reaction.message.guild.members.cache.get(user.id);
